@@ -1,0 +1,82 @@
+/* Fondo de toda la página con una imagen */
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBe8wLt5aB5nARK6iSrR7HZGFXmDljSW-Qg&s');
+    background-size: cover; /* Esto hace que la imagen cubra toda la página */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen permanezca fija cuando se hace scroll */
+    color: #e2d4d4; /* Color del texto */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el título */
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* Color blanco para el título */
+}
+
+/* Personalizar el color de los botones */
+.btn-success {
+    background-color: #1ea552; /* Verde más brillante */
+    border-color: #000000;
+}
+
+.btn-success:hover {
+    background-color: #2bbf14;
+    border-color: #2f981d;
+}
+
+/* Estilos para las tarjetas de productos */
+.card {
+    border: 1px solid #000000; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(216, 27, 27, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transición de movimiento al pasar el mouse */
+    text-align: center; /* Alinea todo el contenido de la tarjeta al centro */
+    padding: 20px; /* Agrega espacio dentro de la tarjeta */
+}
+
+.card:hover {
+    transform: translateY(-55px); /* Eleva la tarjeta cuando se pasa el mouse */
+}
+
+/* Estilo para la imagen dentro de la tarjeta */
+.card-img-top {
+    width: 100%; /* La imagen ocupará todo el ancho de la tarjeta */
+    max-height: 350px; /* Asegura que la imagen no sea más alta que este valor */
+    object-fit: cover; /* Mantiene la relación de aspecto sin deformar la imagen */
+    border-radius: 8px 8px 0 0;
+}
+
+/* Estilo para el párrafo dentro de la tarjeta */
+.card-body {
+    padding: 20px; /* Asegura que haya suficiente espacio alrededor del contenido */
+}
+
+.card-text {
+    text-align: justify; /* Alinea el texto justificadamente (emparejado) */
+    margin-bottom: 25px; /* Espacio inferior para separar el párrafo del botón */
+    font-size: 1rem; /* Ajusta el tamaño de la fuente del párrafo */
+}
+
+/* Asegurando que el texto del título esté alineado correctamente */
+.card-title {
+    text-align: center; /* Alinea el título al centro */
+    font-size: 1.25rem; /* Ajusta el tamaño del título */
+}
+/* Barra lateral */
+.col-lg-4 {
+    margin-top: 20px; /* Agrega espacio encima de la barra lateral */
+}
+
+/* Formulario dentro de la barra lateral */
+form .form-control {
+    margin-bottom: 15px; /* Agrega espacio debajo de cada campo del formulario */
+}
+
+/* Aseguramos que el footer siempre esté al fondo */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; /* Color oscuro para el pie de página */
+}
